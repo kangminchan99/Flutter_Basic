@@ -8,21 +8,38 @@ class ListViewScreen extends StatefulWidget {
 }
 
 class _ListViewScreenState extends State<ListViewScreen> {
+  final postList = [
+    {
+      'title': 'sample title1',
+      'color': Colors.green,
+    },
+    {
+      'title': 'sample title2',
+      'color': Colors.red,
+    },
+    {
+      'title': 'sample title3',
+      'color': Colors.yellow,
+    },
+    {
+      'title': 'sample title4',
+      'color': Colors.pink,
+    }
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('ListView'),
       ),
-      body: ListView(
-        scrollDirection: Axis.horizontal,
-        children: [
-          listViewItem(),
-          listViewItem(title: '1', choiceColor: Colors.yellow),
-          listViewItem(title: '2', choiceColor: Colors.blue),
-          listViewItem(title: '33', choiceColor: Colors.pink),
-        ],
-      ),
+      body: ListView.builder(
+          itemCount: postList.length,
+          itemBuilder: (BuildContext context, int index) {
+            return listViewItem(
+              title: postList[index]['title'] as String,
+              choiceColor: postList[index]['color'] as Color,
+            );
+          }),
     );
   }
 
