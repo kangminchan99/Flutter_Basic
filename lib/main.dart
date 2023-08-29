@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basic/screens/alert_dialog_screen.dart';
 import 'package:flutter_basic/screens/align_screen.dart';
+import 'package:flutter_basic/screens/flexible_screen.dart';
 import 'package:flutter_basic/screens/grid_view_screen.dart';
 import 'package:flutter_basic/screens/list_view_screen.dart';
 import 'package:flutter_basic/screens/scroll_screen.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const AlertDialogScreen(),
+      home: const FlexibleScreen(),
     );
   }
 }
