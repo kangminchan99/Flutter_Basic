@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basic/screens/alert_dialog_screen.dart';
 import 'package:flutter_basic/screens/align_screen.dart';
+import 'package:flutter_basic/screens/bottom_nav_screen.dart';
 import 'package:flutter_basic/screens/flexible_screen.dart';
 import 'package:flutter_basic/screens/gradation_screen.dart';
 import 'package:flutter_basic/screens/grid_view_screen.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SharedPreferencesScreen(),
+      home: const BottomNavScreen(),
     );
   }
 }
