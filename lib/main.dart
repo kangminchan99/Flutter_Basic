@@ -8,6 +8,7 @@ import 'package:flutter_basic/screens/gradation_screen.dart';
 import 'package:flutter_basic/screens/grid_view_screen.dart';
 import 'package:flutter_basic/screens/json_screen.dart';
 import 'package:flutter_basic/screens/list_view_screen.dart';
+import 'package:flutter_basic/screens/local_notifications_screen.dart';
 import 'package:flutter_basic/screens/provider_screen.dart';
 import 'package:flutter_basic/screens/refresh_indicator.dart';
 import 'package:flutter_basic/screens/scroll_screen.dart';
@@ -17,6 +18,23 @@ import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: const LocalNotificationsScreen(),
+    );
+  }
 }
 
 // class MyApp extends StatelessWidget {
@@ -31,27 +49,10 @@ void main() {
 //         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
 //         useMaterial3: true,
 //       ),
-//       home: const ProviderScreen(),
+//       home: ChangeNotifierProvider<AlbumProvider>(
+//         create: (context) => AlbumProvider(),
+//         child: const ProviderScreen(),
+//       ),
 //     );
 //   }
 // }
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: ChangeNotifierProvider<AlbumProvider>(
-        create: (context) => AlbumProvider(),
-        child: const ProviderScreen(),
-      ),
-    );
-  }
-}
