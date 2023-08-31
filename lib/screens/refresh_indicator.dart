@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_basic/repository/product.dart';
+import 'package:flutter_basic/model/product.dart';
 
 class RefreshIndicatorScreen extends StatefulWidget {
   const RefreshIndicatorScreen({super.key});
