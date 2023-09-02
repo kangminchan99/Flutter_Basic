@@ -14,6 +14,7 @@ import 'package:flutter_basic/screens/refresh_indicator.dart';
 import 'package:flutter_basic/screens/scroll_screen.dart';
 import 'package:flutter_basic/screens/shared_preferences_screen.dart';
 import 'package:flutter_basic/screens/stack_screen.dart';
+import 'package:flutter_basic/screens/web_view_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const LocalNotificationsScreen(),
+      home: const WebViewScreen(),
     );
   }
 }
