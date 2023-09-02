@@ -4,6 +4,8 @@ import 'package:flutter_basic/screens/alert_dialog_screen.dart';
 import 'package:flutter_basic/screens/align_screen.dart';
 import 'package:flutter_basic/screens/bottom_nav_screen.dart';
 import 'package:flutter_basic/screens/flexible_screen.dart';
+import 'package:flutter_basic/screens/form/form_screen.dart';
+import 'package:flutter_basic/screens/form/success_screen.dart';
 import 'package:flutter_basic/screens/gradation_screen.dart';
 import 'package:flutter_basic/screens/grid_view_screen.dart';
 import 'package:flutter_basic/screens/json_screen.dart';
@@ -25,15 +27,32 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Flutter Demo',
+//       theme: ThemeData(
+//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+//         useMaterial3: true,
+//       ),
+//       home: const WebViewScreen(),
+//     );
+//   }
+// }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const FormScreen(),
+        '/success': (context) => const SuccessScreen(),
+      },
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const WebViewScreen(),
     );
   }
 }
