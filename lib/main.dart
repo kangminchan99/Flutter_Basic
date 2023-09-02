@@ -17,16 +17,18 @@ import 'package:flutter_basic/screens/scroll_screen.dart';
 import 'package:flutter_basic/screens/shared_preferences_screen.dart';
 import 'package:flutter_basic/screens/stack_screen.dart';
 import 'package:flutter_basic/screens/web_view_screen.dart';
+import 'package:flutter_basic/view/albumView.dart';
+import 'package:flutter_basic/viewModel/albumViewModel.dart';
 import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
 
-  // This widget is the root of your application.
+// This widget is the root of your application.
 //   @override
 //   Widget build(BuildContext context) {
 //     return MaterialApp(
@@ -40,39 +42,39 @@ class MyApp extends StatelessWidget {
 //   }
 // }
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const FormScreen(),
-        '/success': (context) => const SuccessScreen(),
-      },
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-    );
-  }
-}
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   // This widget is the root of your application.
 //   @override
 //   Widget build(BuildContext context) {
 //     return MaterialApp(
 //       title: 'Flutter Demo',
+//       initialRoute: '/',
+//       routes: {
+//         '/': (context) => const FormScreen(),
+//         '/success': (context) => const SuccessScreen(),
+//       },
 //       theme: ThemeData(
 //         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
 //         useMaterial3: true,
 //       ),
-//       home: ChangeNotifierProvider<AlbumProvider>(
-//         create: (context) => AlbumProvider(),
-//         child: const ProviderScreen(),
-//       ),
 //     );
 //   }
 // }
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: ChangeNotifierProvider<AlbumViewModel>(
+        create: (context) => AlbumViewModel(),
+        child: const AlbumView(),
+      ),
+    );
+  }
+}
