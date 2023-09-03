@@ -44,6 +44,8 @@ dependencies:
   webview_flutter_android: ^3.9.5
   webview_flutter_wkwebview: ^3.7.4
   carousel_slider: ^4.2.1
+  firebase_auth: ^4.9.0
+  firebase_core: ^2.15.1
 
 dev_dependencies:
   flutter_test:
