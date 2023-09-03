@@ -9,6 +9,7 @@ import 'package:flutter_basic/screens/form/success_screen.dart';
 import 'package:flutter_basic/screens/gradation_screen.dart';
 import 'package:flutter_basic/screens/grid_view_screen.dart';
 import 'package:flutter_basic/screens/json_screen.dart';
+import 'package:flutter_basic/screens/list_view_pagination.dart';
 import 'package:flutter_basic/screens/list_view_screen.dart';
 import 'package:flutter_basic/screens/local_notifications_screen.dart';
 import 'package:flutter_basic/screens/provider_screen.dart';
@@ -25,22 +26,22 @@ void main() {
   runApp(const MyApp());
 }
 
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
 // This widget is the root of your application.
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Flutter Demo',
-//       theme: ThemeData(
-//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-//         useMaterial3: true,
-//       ),
-//       home: const WebViewScreen(),
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: const ListViewPaginationScreen(),
+    );
+  }
+}
 
 //   @override
 //   Widget build(BuildContext context) {
@@ -59,22 +60,22 @@ void main() {
 //   }
 // }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: ChangeNotifierProvider<AlbumViewModel>(
-        create: (context) => AlbumViewModel(),
-        child: const AlbumView(),
-      ),
-    );
-  }
-}
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Flutter Demo',
+//       theme: ThemeData(
+//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+//         useMaterial3: true,
+//       ),
+//       home: ChangeNotifierProvider<AlbumViewModel>(
+//         create: (context) => AlbumViewModel(),
+//         child: const AlbumView(),
+//       ),
+//     );
+//   }
+// }
