@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "609559482038",
-    "project_id": "nth-skyline-382611",
-    "storage_bucket": "nth-skyline-382611.appspot.com"
+    "project_number": "636915796120",
+    "project_id": "flash-crawler-382611",
+    "storage_bucket": "flash-crawler-382611.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:609559482038:android:fd42fa7d8ffcfc16342017",
+        "mobilesdk_app_id": "1:636915796120:android:913f6323453a8f2ae4a8ed",
         "android_client_info": {
           "package_name": "com.example.flutter_basic"
         }
       },
       "oauth_client": [
         {
-          "client_id": "609559482038-upm6l2mt8638lficf5cfe7gfboat8hu3.apps.googleusercontent.com",
+          "client_id": "636915796120-969lfsfofg41t4pglc2g0hsouje20ctf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCkn6V-HvGIfna8Q1a1KR9FcIIaGgOfwDg"
+          "current_key": "AIzaSyB_yBI72mpq5GbMlCynK-leO6o1v1JagtM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "609559482038-upm6l2mt8638lficf5cfe7gfboat8hu3.apps.googleusercontent.com",
+              "client_id": "636915796120-969lfsfofg41t4pglc2g0hsouje20ctf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
